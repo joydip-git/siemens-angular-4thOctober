@@ -1,0 +1,14 @@
+{
+  "name": "payroll-app-ts",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [],
+  "author": "joydip",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
