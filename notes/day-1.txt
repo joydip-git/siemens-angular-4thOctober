@@ -17,3 +17,19 @@ https://github.com/joydip-git/siemens-angular-4thOctober
 
 function Object(){
 }
+
+1. HR: 
+	- name, id, basic, da, hra, gratuity
+	- calculateSalary
+			- RT: number
+			- args: NA
+2. Developer: 
+	- name, id, basic, da, hra, incentive
+	- calculateSalary
+		- RT: number
+		- args: NA
+
+3. create min 4 objects
+4. place them in an array
+5. iterate through the array and pick up the objects
+	- which has salary more than 2000
