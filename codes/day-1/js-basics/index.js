@@ -1,9 +1,17 @@
-function filterValues(arr) {
+class Person {
+    constructor(nameValue, idValue, salaryValue) {
+        this.name = nameValue
+        this.id = idValue
+        this.salary = salaryValue
+    }
+    print() {
+        return this.name + ' ' + this.id + ' ' + this.salary
+    }
+}
+console.log(Person.prototype)
+const anilObject = new Person('anil', 1, 1000)
+console.log(anilObject)
+//console.log(anilObject.print())
 
-}
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
-const result = filterValues(numbers)
-for (let index = 0; index < result.length; index++) {
-    const element = result[index];
-    console.log(element)
-}
+// console.log(anilObject.hasOwnProperty('print'))
+// console.log(person.prototype.hasOwnProperty('print'))

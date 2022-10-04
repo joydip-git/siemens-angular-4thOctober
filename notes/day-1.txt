@@ -11,3 +11,9 @@
 
 Node JS:
 3rd Party node js s/w (globally installed): C:\Users\<username>\AppData\Roaming\npm
+
+git repo: 
+https://github.com/joydip-git/siemens-angular-4thOctober
+
+function Object(){
+}
