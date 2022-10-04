@@ -1,3 +1,7 @@
+import { EmployeeManager } from "./manager/employeeManager"
+import { Developer } from "./models/developer"
+import Hr from "./models/hr"
+
 const manager = new EmployeeManager()
 manager.add(new Hr('anil', 1, 1000, 2000, 3000, 4000))
 manager.add(new Developer('sunil', 2, 2000, 3000, 4000, 5000))

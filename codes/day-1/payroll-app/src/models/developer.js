@@ -1,4 +1,7 @@
-class Developer extends Employee {
+//const { Employee } = require('./employee')
+import { Employee } from "./employee"
+
+export class Developer extends Employee {
     constructor(name, id, basic, da, hra, incentive) {
         super(name, id, basic, da, hra)
         this.empIncentivePay = incentive
@@ -8,3 +11,7 @@ class Developer extends Employee {
         this.totalSalary += this.empIncentivePay
     }
 }
+
+// module.exports = {
+//     Developer
+// }

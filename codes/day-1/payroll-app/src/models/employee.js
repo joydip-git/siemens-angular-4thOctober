@@ -1,4 +1,4 @@
-class Employee {
+export class Employee {
     constructor(name, id, basic, da, hra) {
         this.empName = name
         this.empId = id
@@ -11,3 +11,6 @@ class Employee {
         this.totalSalary = this.empBasicPay + this.empDaPay + this.empHraPay
     }
 }
+// module.exports = {
+//     Employee
+// }

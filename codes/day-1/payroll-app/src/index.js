@@ -1,3 +1,10 @@
+// const { EmployeeManager } = require('./manager/employeeManager')
+//const Hr = require('./models/hr')
+//const { Developer } = require('./models/developer')
+import { EmployeeManager } from './manager/employeeManager'
+import Hr from './models/hr'
+import { Developer } from './models/developer'
+
 const manager = new EmployeeManager()
 manager.add(new Hr('anil', 1, 1000, 2000, 3000, 4000))
 manager.add(new Developer('sunil', 2, 2000, 3000, 4000, 5000))

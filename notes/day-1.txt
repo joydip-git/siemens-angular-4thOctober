@@ -33,3 +33,26 @@ function Object(){
 4. place them in an array
 5. iterate through the array and pick up the objects
 	- which has salary more than 2000
+
+
+
+module in JS
+-------------------------------------------------
+
+formats:
+	a. common js format
+		module.exports={}/reference to ....
+		require()
+
+	b. ES6 format:
+	c. AMD: Asynchronous Module format [requirejs understands this format]
+	d. UMD: Universal Module format
+		
+
+
+loader:
+	requirejs
+	systemjs
+
+
+

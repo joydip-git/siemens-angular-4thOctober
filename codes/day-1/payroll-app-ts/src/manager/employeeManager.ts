@@ -1,4 +1,7 @@
-class EmployeeManager {
+import employees from "../data/repository"
+import { Employee } from "../models/employee"
+
+export class EmployeeManager {
     add(emp: Employee): boolean {
         const found = employees.find(
             function (e) {

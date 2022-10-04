@@ -1,4 +1,7 @@
-class EmployeeManager {
+//const employees = require('../data/repository')
+import employees from '../data/repository'
+
+export class EmployeeManager {
     add(emp) {
         const found = employees.find(
             function (e) {
@@ -30,3 +33,7 @@ class EmployeeManager {
         )
     }
 }
+
+// module.exports = {
+//     EmployeeManager
+// }
