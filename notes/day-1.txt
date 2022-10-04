@@ -1,0 +1,13 @@
+1. JS - basics, advanced JS, new features
+2. TS
+
+3. artifacts required to create an application
+	a. transpiler
+	b. modularity
+	c. testing
+	d. building/packaging
+
+4. Angular
+
+Node JS:
+3rd Party node js s/w (globally installed): C:\Users\<username>\AppData\Roaming\npm
