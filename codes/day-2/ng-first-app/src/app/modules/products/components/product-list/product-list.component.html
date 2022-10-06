@@ -1,0 +1,33 @@
+<div class="container">
+    <h2 class="text-primary">Products List</h2>
+
+    <br />
+
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Code</th>
+                    <th>Price</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let p of productRecords">
+                    <td>
+                        <div class="img-responsive">
+                            <img [src]="p.imageUrl" alt="NA" class="imgStyle" />
+                        </div>
+                    </td>
+                    <td>{{p.productName}}</td>
+                    <td>{{p.productCode}}</td>
+                    <td>{{p.price}}</td>
+                    <td>{{p.starRating}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

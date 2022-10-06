@@ -10,7 +10,7 @@ export class AppComponent {
   name = 'joy'
   width = 200
   constructor() {
-
+    console.log('[AC] created')
   }
 
   updateName(newName: string) {

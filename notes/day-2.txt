@@ -60,6 +60,20 @@ Angular:
 		etc.
 
 
+decorators:
+	functions, which supplies some metadata to angular about the class
+	
+	decorators used with class:
+	@Component() => component, @NgModule() => module, @Pipe() => pipe, @Directive() => directive, @Injectable() => service
+
+	decorators with properties of the class
+	@Input(), @Output()
+
+	decorators with arguments of a method
+	@Inject()
+
+
+
 
 
 
