@@ -48,25 +48,5 @@ export const products = [
         "price": 67,
         "starRating": 4,
         "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-    },
-    {
-        "productId": 6,
-        "productName": "dell xps",
-        "description": "new laptop from dell",
-        "productCode": "1234",
-        "price": 10000,
-        "releaseDate": "2022-09-21",
-        "starRating": 4,
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-    },
-    {
-        "productId": 7,
-        "productName": "sample",
-        "description": "sample",
-        "productCode": "12334",
-        "price": 100000,
-        "releaseDate": "2022-09-21",
-        "starRating": 5,
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
     }
 ]
