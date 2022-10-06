@@ -41,5 +41,25 @@ binding:
 
 document.createElement('button').addEventListener('click',f(){})
 
+Angular:
+	client-side framework for building web application
+	SPA: single page application
+	UI is built as collection of components
+	provides MV-* architecture (MVC/MVVM)
+	modular feature for grouping assets
+
+	features:
+		component: class
+		component data and event binding
+		directives: class
+		pipes: class
+		services: class
+		routing
+		compilation: AOT and JIT
+		dependency injection
+		etc.
+
+
+
 
 
