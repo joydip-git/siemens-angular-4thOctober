@@ -1,0 +1,11 @@
+<tr *ngFor="let product of products">
+    <td>
+        <div class="img-responsive">
+            <img [src]="product.imageUrl" alt="NA" class="imgStyle" />
+        </div>
+    </td>
+    <td>{{product.productName}}</td>
+    <td>{{product.productCode}}</td>
+    <td>{{product.price}}</td>
+    <td>{{product.starRating}}</td>
+</tr>
