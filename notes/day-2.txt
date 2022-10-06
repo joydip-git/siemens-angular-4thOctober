@@ -1,0 +1,45 @@
+core babel packages: npm i @babel/core @babel/cli -D
+transformer packages (plugins)
+set of transformer packages (plugins): preset
+
+preset package for ES2015+ syntax converters:
+@babel/preset-env
+
+plugin for ES6->AMD module format:
+@babel/plugin-transform-modules-amd
+
+define(
+function(){
+	function calculate(){}
+})
+
+
+<p>Welcome to angular</p>
+document.createElement('p').innerHTML = ''
+
+
+component = code + design
+
+binding:
+	code -> design
+		data binding:
+			syntax: 
+			a. interpolation: converts data into string
+				code: title=''
+				design: {{title}}
+			b. property binding: retains original data type
+				code: data=3000
+				design: <element [attr]="data">
+
+
+	design -> code
+		event binding:
+			design: <element (event)="M(args)">
+			code: M(params){}
+
+
+
+document.createElement('button').addEventListener('click',f(){})
+
+
+
