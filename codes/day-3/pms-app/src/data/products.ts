@@ -1,4 +1,6 @@
-export const products = [
+import { Product } from "src/app/modules/products/models/product.model";
+
+export const products: Product[] = [
     {
         "productId": 1,
         "productName": "Leaf Rake",

@@ -5,7 +5,7 @@
     <app-filter (searchTextChanged)="filterTextReceived($event)"></app-filter>
     <br>
     <div class="table-responsive">
-        <table class="table">
+        <table class="table" *ngIf="productRecords">
             <thead class="headerStyle">
                 <tr>
                     <th>Image</th>

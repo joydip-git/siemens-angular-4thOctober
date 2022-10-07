@@ -18,3 +18,39 @@ X				OnX					ngOnX
 Init			OnInt				ngOnInit
 Changes			OnChanges			ngOnChanges
 Destroy			OnDestroy			ngOnDestroy
+
+
+ASP.NET Core Web API/ ASp.NET MVC Web API/ Springboot/Node JS+Express JS,...................
+
+
+URL								    HTTP method		Input data								Output
+------------------------------------------------------------------------------------------------
+http://localhost:3003/products		GET						NA					{"message":"", "data":[]}
+http://127.0.0.1:3003/products/{id}	GET				route data: id 			{"message":"", "data": {}}
+
+http://127.0.0.1:3003/products		POST			product object [req body]{"message":"", "data":[]}
+http://127.0.0.1:3003/products/{id}	PUT				route data: id, product object [req body]
+																					{"message":"", "data":[]}
+
+
+http://127.0.0.1:3003/products/{id}	DELETE			route data: id 			{"message":"", "data": []}
+
+
+
+RESTFul API requests:
+HttpClient (HttpClientModule)
+	=> .get(url)
+	=> .get(url+'/id')
+	=> .post(url, pobject)
+	=> .put(url+'/id',pobject)
+	=> .delete(url+'/id')
+
+
+
+
+
+
+
+
+
+
