@@ -1,0 +1,20 @@
+component lifecycle
+
+mounting:
+	1. created (constructor) 
+	2. changes (ngOnChanges)
+	3. Init		(ngOnInit)
+
+updation:
+	changes
+
+destruction:
+	destroy
+
+event name		interface name		method name
+-----------------------------------------------------
+X				OnX					ngOnX
+
+Init			OnInt				ngOnInit
+Changes			OnChanges			ngOnChanges
+Destroy			OnDestroy			ngOnDestroy

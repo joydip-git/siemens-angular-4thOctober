@@ -1,0 +1,6 @@
+#innerDiv {
+  width: 100px;
+}
+#outerDiv {
+  overflow: hidden;
+}

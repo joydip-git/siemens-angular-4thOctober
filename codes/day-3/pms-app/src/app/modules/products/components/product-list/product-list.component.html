@@ -2,7 +2,7 @@
     <h2 class="text-primary">Products List</h2>
 
     <br />
-
+    <app-filter (searchTextChanged)="filterTextReceived($event)"></app-filter>
     <br>
     <div class="table-responsive">
         <table class="table">
@@ -16,7 +16,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let product of (productRecords|productfilter:filterText)">
+                <tr *ngFor="let product of (productRecords|productfilter:searchText)">
                     <td>
                         <div class=" img-responsive">
                             <img [src]="product.imageUrl" alt="NA" class="imgStyle" />
@@ -25,7 +25,9 @@
                     <td>{{product.productName|uppercase}}</td>
                     <td>{{product.productCode|lowercase}}</td>
                     <td>{{product.price|currency:'INR'}}</td>
-                    <td>{{product.starRating}}</td>
+                    <td>
+                        <app-star [rating]="product.starRating"></app-star>
+                    </td>
                 </tr>
             </tbody>
         </table>
