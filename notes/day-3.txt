@@ -46,6 +46,23 @@ HttpClient (HttpClientModule)
 	=> .delete(url+'/id')
 
 
+class Base{
+	constructor(@Inject('') public s:IProductService){
+	}
+}
+
+class Child extends Base{
+
+	constructor(){
+		super()
+	}
+
+ngOnInt(){
+	
+}
+}
+
+
 
 
 
