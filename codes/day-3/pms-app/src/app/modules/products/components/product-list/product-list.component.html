@@ -1,11 +1,20 @@
-<div class="container">
+<ng-template #loadingTemplate>
+    <span>Loading..please wait</span>
+</ng-template>
+<ng-template #errorTemplate>
+    <span>{{errorMessage}}</span>
+</ng-template>
+<ng-template #alternate>
+    <span>No record found....</span>
+</ng-template>
+<div class="container" *ngIf="!loading;else loadingTemplate">
     <h2 class="text-primary">Products List</h2>
 
     <br />
     <app-filter (searchTextChanged)="filterTextReceived($event)"></app-filter>
     <br>
-    <div class="table-responsive">
-        <table class="table" *ngIf="productRecords">
+    <div class="table-responsive" *ngIf="errorMessage==='';else errorTemplate">
+        <table class="table" *ngIf="productRecords && productRecords?.length===0;else alternate">
             <thead class="headerStyle">
                 <tr>
                     <th>Image</th>
