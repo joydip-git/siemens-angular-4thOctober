@@ -14,7 +14,7 @@
     <app-filter (searchTextChanged)="filterTextReceived($event)"></app-filter>
     <br>
     <div class="table-responsive" *ngIf="errorMessage==='';else errorTemplate">
-        <table class="table" *ngIf="productRecords && productRecords?.length===0;else alternate">
+        <table class="table" *ngIf="productRecords && productRecords?.length!==0;else alternate">
             <thead class="headerStyle">
                 <tr>
                     <th>Image</th>
@@ -27,7 +27,7 @@
             <tbody>
                 <tr *ngFor="let product of (productRecords|productfilter:searchText)">
                     <td>
-                        <div class=" img-responsive">
+                        <div class=" img-responsive" [routerLink]="['/products',product.productId]">
                             <img [src]="product.imageUrl" alt="NA" class="imgStyle" />
                         </div>
                     </td>

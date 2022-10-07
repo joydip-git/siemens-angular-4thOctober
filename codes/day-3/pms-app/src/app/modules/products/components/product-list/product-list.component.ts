@@ -3,11 +3,11 @@ import { PRODUCT_SERVICE } from "src/constants/app.constants";
 import { ApiResponse } from "../../models/api-response.model";
 import { Product } from "../../models/product.model";
 import { IAppService } from "../../models/productservice.contract";
-import { ProductService } from "../../services/product.service";
+//import { ProductService } from "../../services/product.service";
 
 
 @Component({
-    selector: 'app-product-list',
+    //selector: 'app-product-list',
     templateUrl: './product-list.component.html',
     styleUrls: ['./product-list.component.css'],
     //providers: [ProductService]

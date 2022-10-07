@@ -16,7 +16,7 @@ export class ProductService implements IAppService<Product> {
 
     }
     getRecord(id: number): Observable<ApiResponse<Product>> {
-        throw new Error("Method not implemented.");
+        return this.http.get<ApiResponse<Product>>(`${environment.apiUrl}/${id}`)
     }
     addRecord(obj: Product): Observable<ApiResponse<Product[]>> {
         throw new Error("Method not implemented.");

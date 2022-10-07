@@ -1,0 +1,19 @@
+<ng-template #loadingTemplate>
+    <span>Loading..please wait</span>
+</ng-template>
+<ng-template #errorTemplate>
+    <span>{{errorMessage}}</span>
+</ng-template>
+<ng-template #alternate>
+    <span>No record found....</span>
+</ng-template>
+<div *ngIf="!loading; else loadingTemplate">
+    <div *ngIf="errorMessage==='';else errorTemplate">
+        <h2 *ngIf="product; else alternate">Details of {{product.productName}}</h2>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<button class="btn btn-primary" (click)="goBack()">Back</button>

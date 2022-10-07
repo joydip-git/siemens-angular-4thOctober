@@ -7,10 +7,34 @@ import { StarComponent } from './components/star/star.component';
 //import { ProductService } from "./services/product.service";
 import { PRODUCT_SERVICE, PRODUCT_SERVICE_CLASS } from "src/constants/app.constants";
 import { HttpClientModule } from "@angular/common/http";
+import { Routes, RouterModule } from "@angular/router";
+import { AddProductComponent } from "./components/add-product/add-product.component";
+import { UpdateProductComponent } from "./components/update-product/update-product.component";
+import { ProductDetailComponent } from "./components/product-detail/product-detail.component";
+
+const productRoutes: Routes = [
+    {
+        path: 'products',
+        component: ProductListComponent
+    },
+    {
+        path: 'products/add',
+        component: AddProductComponent
+    },
+    {
+        path: 'products/:id',
+        component: ProductDetailComponent
+    },
+
+    {
+        path: 'products/update/:id',
+        component: UpdateProductComponent
+    },
+]
 
 @NgModule({
-    declarations: [ProductListComponent, FilterProductPipe, FilterComponent, StarComponent],
-    imports: [CommonModule, HttpClientModule],
+    declarations: [ProductListComponent, FilterProductPipe, FilterComponent, StarComponent, AddProductComponent, UpdateProductComponent, ProductDetailComponent],
+    imports: [CommonModule, HttpClientModule, RouterModule.forRoot(productRoutes)],
     //providers: [ProductService],
     providers: [
         {

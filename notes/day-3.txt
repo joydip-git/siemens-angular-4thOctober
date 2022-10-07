@@ -63,6 +63,50 @@ ngOnInt(){
 }
 
 
+path							component
+--------------------------------------
+/								Home
+/home							Home
+
+/products						PLC
+/products/id					PDC
+/products/add					APC
+/products/update/id			UPC
+
+**								PNF
+
+
+Routing framework: @angular/router (RouterModule)
+-------------------------------
+general classes:
+Route => path, component
+Routes (Route[]) => store all routes
+ActivatedRouteSnapshot
+
+
+service class:
+Router <= Routes
+ActivatedRoute
+
+Module:
+RouterModule.forRoot(routes array)
+
+directives:
+router-outlet: creates an outlet for the routed components to be loaded
+routerLink
+
+directives:
+	a. component directive (@Component)
+	b. structural directive (*ngIf, *ngFor,...)
+	c. attribute directive (routerLink, ngClass, ngStyle,...)
+
+
+
+
+
+
+
+
 
 
 
